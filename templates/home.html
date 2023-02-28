@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <body bgcolor=#FFDFDD>
+
+        <center>
+
+        <h1 style="font-size:60px;background-color:tomato;">TIP PREDICTION</h1><br>
+        <img src='static\tip1.jpg' alt="Tip Image" style="width:500px;height:430px;">
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Total bill :  <input type="text", name='a', placeholder="enter total bill"> <br><br>
+            Sex :  <input type="text", name='b', placeholder="enter sex"> <p>Male=0 and Female=1</p> <br><br>
+            Day :  <input type="text", name='c', placeholder="enter day"> <p>Thur=0, Fri=1, Sat=2, Sun=3</p> <br><br>
+            Time :  <input type="text", name='d', placeholder="enter time"> <p>Lunch=0 and Dinner=1</p> <br><br>
+            Size : <input type="text", name='e', placeholder="enter size"> <br><br><br></b>
+            <input type="submit" , value='predict tip!' >
+        </form>
+        <p style="color:Black Bean;font-size:160%;text-align:center;background-color:tomato;">{{prediction_text}}</p>
+        
+        
+        
+    </center>
+
+    </body>
+</html>
